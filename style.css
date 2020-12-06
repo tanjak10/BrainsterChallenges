@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: serif;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-bottom: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.f-section {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(255, 255, 255, 0.2);
+  background-size: cover;
+  position: relative;
+}
+
+.first {
+  background-image: url("./images/image1.jpg");
+}
+.second {
+  background-image: url("./images/image2.jpg");
+  height: 50vh;
+}
+.third {
+  background-image: url("./images/image3.jpg");
+  height: 50vh;
+}
+
+.first-section .first h1 {
+  position: absolute;
+  top: 50%;
+  left: 38%;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  display: inline;
+  padding: 5px;
+}
+
+.section-one {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  color: grey;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+.first-section .section-one p {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.s-section .section-one {
+  background-color: black;
+  color: white;
+}
+.s-section .section-one p {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.t-section .section-one {
+  background-color: black;
+  color: white;
+}
+
+.t-section .section-one p {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.fourth-s h2 {
+  position: relative;
+  top: 50%;
+  left: 45%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  border: 1px solid black;
+  background-color: black;
+  font-weight: normal;
+}
+
+.second h2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+}
+
+.third h2 {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bolder;
+}
+
+.fourth-s .first h2 {
+  display: inline;
+  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+}
+
+@media (max-width: 600px) {
+  .first,
+  .second,
+  .third {
+    background-attachment: unset;
+  }
+}
+
+@media (max-width: 425px) {
+  h1,
+  h2 {
+    font-size: 15px;
+  }
+  p {
+    font-size: 10px;
+  }
+}
