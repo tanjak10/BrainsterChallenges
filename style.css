@@ -1,0 +1,81 @@
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+ul {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+ul li a {
+  line-height: 2.5;
+  color: gray;
+}
+
+ul li a:hover {
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: lightgray;
+}
+
+footer a i {
+  color: #d3d3d3;
+  font-size: 15px;
+}
+
+footer p {
+  font-size: 10px;
+  color: #808080;
+}
+
+.bg-blue:hover {
+  background-color: blue;
+}
+
+.bg-red:hover {
+  background-color: tomato;
+}
+
+.bg-violet:hover {
+  background-color: rgb(79, 79, 243);
+}
+
+.bg-orange:hover {
+  background-color: orange;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.images {
+  width: 100%;
+  z-index: 1;
+}
+
+.images:hover {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  color: gray;
+}
+
+@media (max-width: 768px) {
+  nav img,
+  ul,
+  .icons {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
