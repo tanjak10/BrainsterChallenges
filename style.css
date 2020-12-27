@@ -1,0 +1,32 @@
+.bg-img {
+  background-image: url("./images/home.jpg"),
+    linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+  background-blend-mode: overlay;
+  width: 100%;
+  background-size: cover;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: lightgrey !important;
+}
+
+.f-size {
+  font-size: 13px;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.bg-blue {
+  background-color: rgb(71, 0, 185);
+}
+
+button:hover {
+  background-color: #ffffff;
+  color: black !important;
+}
+
+.text-box > *:last-child {
+  margin-bottom: 0;
+}
