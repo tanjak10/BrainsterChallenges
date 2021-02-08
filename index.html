@@ -19,13 +19,14 @@
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-warning">
       <div class="container-fluid my-3">
-        <!-- na navbarot da se dodade box shadow  -->
-        <a class="navbar-brand mr-auto" href="#"
-          ><img src="./img/Logo.png" class="d-block w-100"
-        /></a>
-        <!-- <span class="text-dark text-uppercase">
-          <b>Brainster</b>
-        </span> -->
+        <div>
+          <a class="navbar-brand mr-auto logo" href="#"
+            ><img src="./img/Logo.png" class="d-block w-100"
+          /></a>
+          <p class="text-dark text-uppercase font-s font-weight-bold">
+            Brainster
+          </p>
+        </div>
         <button
           class="navbar-toggler"
           type="button"
@@ -91,7 +92,7 @@
         <div class="col text-center">
           <img
             src="./img/StockSnap_CLKICRAJMW.jpg"
-            class="w-100 d-block calc"
+            class="w-100 d-block"
             alt=""
           />
           <h1 class="display-4 text-dark font-weight-bold text-center">
@@ -102,60 +103,470 @@
     </div>
     <!-- </div> -->
 
-    <!-- <div class="container-fluid">
-      <div class="row">
-        <div class="col-4">
-          <div class="filters">
-            <label for="filter-coding" class="filter">
-              <input type="checkbox" id="filter-coding" /> Проекти на студенти
-              по академијата <br />
-              за маркетинг
-            </label>
+    <div class="filters">
+      <label for="filter-marketing" class="filter">
+        <input type="checkbox" id="filter-marketing" />
+        Проекти на студенти по академијата <br />
+        за маркетинг
+      </label>
+      <label for="filter-coding" class="filter">
+        <input type="checkbox" id="filter-coding" /> Проекти на студенти по
+        академијата <br />
+        за програмирање
+      </label>
+      <label for="filter-design" class="filter">
+        <input type="checkbox" id="filter-design" /> Проекти на студенти по
+        академијата <br />
+        за дизајн
+      </label>
+    </div>
 
-            <div class="col-4">
-              <label for="filter-coding" class="filter">
-                <input type="checkbox" id="filter-coding" /> Проекти на студенти
-                по академијата <br />
-                за програмирање
-              </label>
-            </div>
-            <div class="col-4">
-              <label for="filter-coding" class="filter">
-                <input type="checkbox" id="filter-coding" /> Проекти на студенти
-                по академијата <br />
-                за дизајн
-              </label>
+    <!-- 
+    <div class="card marketing">
+      <div class="cards row">
+          <div class="card" style="width: 20rem">
+            <img
+              src="./img/StockSnap_YBKJ1G35EX.jpg"
+              class="card-img-top w-100"
+              alt="..."
+            />
+            <div class="card-body">
+              <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+              <h5 class="card-title font-weight-bold mt-2 mb-0">
+                Име на проектот стои овде во две линии
+              </h5>
+              <p class="card-text pt-2">
+                <small
+                  >Краток опис во кој студентите ќе можат да опишат за што се
+                  работи во проектот.</small
+                >
+              </p>
+              <p class="py-2">
+                <small><b>Април - Октомври 2019</b> </small>
+              </p>
+              <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                >Дознај повеќе</a
+              >
             </div>
           </div>
+        </div>
+  </div>
+  <div class="card marketing">
+    <div class="cards row">
+        <div class="card" style="width: 20rem">
+          <img
+            src="./img/StockSnap_YBKJ1G35EX.jpg"
+            class="card-img-top w-100"
+            alt="..."
+          />
+          <div class="card-body">
+            <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+            <h5 class="card-title font-weight-bold mt-2 mb-0">
+              Име на проектот стои овде во две линии
+            </h5>
+            <p class="card-text pt-2">
+              <small
+                >Краток опис во кој студентите ќе можат да опишат за што се
+                работи во проектот.</small
+              >
+            </p>
+            <p class="py-2">
+              <small><b>Април - Октомври 2019</b> </small>
+            </p>
+            <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+              >Дознај повеќе</a
+            >
+          </div>
+        </div>
+      </div>
+</div>
+<div class="card marketing">
+  <div class="cards row">
+      <div class="card" style="width: 20rem">
+        <img
+          src="./img/StockSnap_YBKJ1G35EX.jpg"
+          class="card-img-top w-100"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+          <h5 class="card-title font-weight-bold mt-2 mb-0">
+            Име на проектот стои овде во две линии
+          </h5>
+          <p class="card-text pt-2">
+            <small
+              >Краток опис во кој студентите ќе можат да опишат за што се
+              работи во проектот.</small
+            >
+          </p>
+          <p class="py-2">
+            <small><b>Април - Октомври 2019</b> </small>
+          </p>
+          <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+            >Дознај повеќе</a
+          >
+        </div>
+      </div>
+    </div>
+</div>
+<div class="card marketing">
+  <div class="cards row">
+      <div class="card" style="width: 20rem">
+        <img
+          src="./img/StockSnap_YBKJ1G35EX.jpg"
+          class="card-img-top w-100"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+          <h5 class="card-title font-weight-bold mt-2 mb-0">
+            Име на проектот стои овде во две линии
+          </h5>
+          <p class="card-text pt-2">
+            <small
+              >Краток опис во кој студентите ќе можат да опишат за што се
+              работи во проектот.</small
+            >
+          </p>
+          <p class="py-2">
+            <small><b>Април - Октомври 2019</b> </small>
+          </p>
+          <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+            >Дознај повеќе</a
+          >
+        </div>
+      </div>
+    </div>
+</div>
+<div class="card marketing">
+  <div class="cards row">
+      <div class="card" style="width: 20rem">
+        <img
+          src="./img/StockSnap_YBKJ1G35EX.jpg"
+          class="card-img-top w-100"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+          <h5 class="card-title font-weight-bold mt-2 mb-0">
+            Име на проектот стои овде во две линии
+          </h5>
+          <p class="card-text pt-2">
+            <small
+              >Краток опис во кој студентите ќе можат да опишат за што се
+              работи во проектот.</small
+            >
+          </p>
+          <p class="py-2">
+            <small><b>Април - Октомври 2019</b> </small>
+          </p>
+          <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+            >Дознај повеќе</a
+          >
+        </div>
+      </div>
+    </div>
+</div>
+<div class="card marketing">
+  <div class="cards row">
+    <div class="col-3">
+      <div class="card" style="width: 20rem">
+        <img
+          src="./img/StockSnap_YBKJ1G35EX.jpg"
+          class="card-img-top w-100"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+          <h5 class="card-title font-weight-bold mt-2 mb-0">
+            Име на проектот стои овде во две линии
+          </h5>
+          <p class="card-text pt-2">
+            <small
+              >Краток опис во кој студентите ќе можат да опишат за што се
+              работи во проектот.</small
+            >
+          </p>
+          <p class="py-2">
+            <small><b>Април - Октомври 2019</b> </small>
+          </p>
+          <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+            >Дознај повеќе</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="card marketing">
+  <div class="cards row">
+    <div class="col-3">
+      <div class="card" style="width: 20rem">
+        <img
+          src="./img/StockSnap_YBKJ1G35EX.jpg"
+          class="card-img-top w-100"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+          <h5 class="card-title font-weight-bold mt-2 mb-0">
+            Име на проектот стои овде во две линии
+          </h5>
+          <p class="card-text pt-2">
+            <small
+              >Краток опис во кој студентите ќе можат да опишат за што се
+              работи во проектот.</small
+            >
+          </p>
+          <p class="py-2">
+            <small><b>Април - Октомври 2019</b> </small>
+          </p>
+          <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+            >Дознај повеќе</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div><div class="card marketing">
+  <div class="cards row">
+    <div class="col-3">
+      <div class="card" style="width: 20rem">
+        <img
+          src="./img/StockSnap_YBKJ1G35EX.jpg"
+          class="card-img-top w-100"
+          alt="..."
+        />
+        <div class="card-body">
+          <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+          <h5 class="card-title font-weight-bold mt-2 mb-0">
+            Име на проектот стои овде во две линии
+          </h5>
+          <p class="card-text pt-2">
+            <small
+              >Краток опис во кој студентите ќе можат да опишат за што се
+              работи во проектот.</small
+            >
+          </p>
+          <p class="py-2">
+            <small><b>Април - Октомври 2019</b> </small>
+          </p>
+          <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+            >Дознај повеќе</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+    <!-- <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="cards row">
+            <div class="card marketing" style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="cards row">
+            <div class="card" style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-3">
+          <div class="card coding">
+            <div class="card" style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cards row">
+            <div class="card" style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cards row">
+            <div class="card" style="width: 20rem">
+              <div class="coding">
+                <img
+                  src="./img/StockSnap_YBKJ1G35EX.jpg"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <span class="bg-warning px-2 py-1"
+                    >Академија за маркетинг</span
+                  >
+                  <h5 class="card-title font-weight-bold mt-2 mb-0">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text pt-2">
+                    <small
+                      >Краток опис во кој студентите ќе можат да опишат за што
+                      се работи во проектот.</small
+                    >
+                  </p>
+                  <p class="py-2">
+                    <small><b>Април - Октомври 2019</b> </small>
+                  </p>
+                  <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                    >Дознај повеќе</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-4">
+          <div class="cards row">
+            <div class="card" style="width: 20rem">
+              <div class="marketing">
+                <img
+                  src="./img/StockSnap_YBKJ1G35EX.jpg"
+                  class="card-img-top w-100"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <span class="bg-warning px-2 py-1"
+                    >Академија за маркетинг</span
+                  >
+                  <h5 class="card-title font-weight-bold mt-2 mb-0">
+                    Име на проектот стои овде во две линии
+                  </h5>
+                  <p class="card-text pt-2">
+                    <small
+                      >Краток опис во кој студентите ќе можат да опишат за што
+                      се работи во проектот.</small
+                    >
+                  </p>
+                  <p class="py-2">
+                    <small><b>Април - Октомври 2019</b> </small>
+                  </p>
+                  <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                    >Дознај повеќе</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card coding">
+          <h1>Coding 2</h1>
+        </div>
+        <div class="card marketing">
+          <h1>Marketing 3</h1>
+        </div>
+        <div class="card design">
+          <h1>Design 4</h1>
+        </div>
+        <div class="card coding">
+          <h1>Coding 5</h1>
+        </div>
+        <div class="card design">
+          <h1>Design 6</h1>
+        </div>
+        <div class="card marketing">
+          <h1>Marketing 7</h1>
         </div>
       </div>
     </div> -->
 
-    <div class="container-fluid">
-      <div class="row bg-dark text-white font-weight-bold">
-        <div class="col-4 pl-4 border-r links">
-          <p class="py-4">
-            Проекти на студенти по академијата <br />
-            за маркетинг
-          </p>
-          <!-- <i class="fas fa-check-circle"></i> -->
-        </div>
-        <div class="col-4 pl-4 border-r links">
-          <p class="py-4">
-            Проекти на студенти по академијата <br />
-            за програмирање
-          </p>
-        </div>
-        <div class="col-4 pl-4 links">
-          <p class="py-4">
-            Проекти на студенти по академијата <br />
-            за дизајн
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container-fluid bg-warning">
+    <!-- <div class="container-fluid bg-warning">
       <div class="row py-5">
         <div class="col">
           <p class="h2 text-sm-left text-md-center text-lg-center">Проекти</p>
@@ -716,6 +1127,594 @@
         </div>
         <div class="col-12 col-md-3"></div>
       </div>
+    </div> -->
+
+    <div class="container-fluid bg-warning">
+      <!-- coding  -->
+      <div class="cards row">
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card coding">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- marketing  -->
+        <div class="card marketing">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card marketing">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card marketing">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card marketing">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card marketing">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card marketing">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- design  -->
+        <div class="card design">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card design">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card design">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card design">
+          <div class="cards row">
+            <div style="width: 20rem">
+              <img
+                src="./img/StockSnap_YBKJ1G35EX.jpg"
+                class="card-img-top w-100"
+                alt="..."
+              />
+              <div class="card-body">
+                <span class="bg-warning px-2 py-1">Академија за маркетинг</span>
+                <h5 class="card-title font-weight-bold mt-2 mb-0">
+                  Име на проектот стои овде во две линии
+                </h5>
+                <p class="card-text pt-2">
+                  <small
+                    >Краток опис во кој студентите ќе можат да опишат за што се
+                    работи во проектот.</small
+                  >
+                </p>
+                <p class="py-2">
+                  <small><b>Април - Октомври 2019</b> </small>
+                </p>
+                <a href="#" class="btn d-block bg-red text-white px-4 mt-3"
+                  >Дознај повеќе</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <footer class="bg-dark text-white py-3">
@@ -723,6 +1722,8 @@
         Изработено со &#10084; од студентите на Brainster
       </p>
     </footer>
+
+    <script src="./main.js"></script>
 
     <!-- Latest Font-Awesome CDN -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
