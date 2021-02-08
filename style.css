@@ -10,39 +10,36 @@
   font-size: 7px;
 }
 
-/* .bg-img {
-  background-image: url("./img/StockSnap_CLKICRAJMW.jpg");
+.bg-img {
+  background-image: url("./img/StockSnap_FBXB2DA8O7.jpg");
   background-size: cover;
-} */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+}
 
-/* .box-shadow {
+.box-shadow {
   box-shadow: 0px 0px 10px 0px rgb(197, 188, 102);
-} */
+}
 
 .bg-red {
   background-color: red !important;
 }
 
-/* .calc {
+.calc {
   height: calc(100vh - 107px);
-} */
+}
 
-/* .jumbotron,
+.jumbotron,
 p {
   margin-bottom: 0 !important;
-} */
-
-/* .filter {
-  display: inline-block;
-  padding: 10px;
-  border: 1px solid black;
 }
 
 .links:hover {
   background-color: #dc3545;
 }
 
-.border-r {
+/* .border-r {
   border-right: 1px solid grey;
 } */
 
@@ -55,14 +52,14 @@ p {
   transition: all 0.6s ease 0s;
   z-index: 1111;
 }
-/* 
+
 a {
   float: right;
 }
 
 .icon {
   font-size: 25px;
-} */
+}
 
 /* .card-img,
 .card-img-top {
@@ -80,7 +77,6 @@ a {
   /* border: 1px solid black; */
   /* padding: 10px; */
   box-shadow: 2px 2px 5px 0px rgba(107, 95, 107, 1);
-
 }
 /* .coding {
   background-color: lightblue;
@@ -101,12 +97,20 @@ a {
 .filter {
   display: inline-block;
   padding: 10px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
+
+
 .active {
-  background: red !important;
+  background: #dc3545 !important;
 }
 /* #filter-coding, #filter-design, #filter-marketing {
   display: none;
 } */
+
+.button-mob {
+  height: 100vh;
+  transform: translateX(-100%) / translateX(0%);
+  transition: 225ms;
+}
