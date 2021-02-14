@@ -3,9 +3,9 @@
 // let num = prompt('Please enter a number: '); 
  
 //   if (num % 2 == 0) {
-//     console.log("The number is even.");
+//     console.log(`The number ${num} is even.`);
 //   } else {
-//     console.log("The number is odd.");
+//     console.log(`The number ${num} is not even.`);
 //   }
 
 
@@ -25,9 +25,9 @@
 // let num3 = parseInt(prompt('Please enter a number: ')) ;
 // let isPrime = true;
 
-// console.log (`Number 1: ${num1}`);
-// console.log (`Number 2: ${num2}`);
-// console.log (`Number 3: ${num3}`);
+// console.log (`Number1: ${num1}`);
+// console.log (`Number2: ${num2}`);
+// console.log (`Number3: ${num3}`);
 
 // let smallestNum;
 // let largestNum;
@@ -74,7 +74,7 @@
 
 // if (largestNum === 1) {
 //     console.log(`${largestNum} is neither prime nor composite number.`);
-// } else if(largestNum > 1) {
+// } else if (largestNum > 1) {
 //     for (let i = 2; i < largestNum; i++) {
 //         if (largestNum % i == 0) {
 //             isPrime = false;
