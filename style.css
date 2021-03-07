@@ -4,3 +4,20 @@
   background-size: contain;
   background-position: center;
 }
+
+.btns {
+  transform: translateY(100%);
+}
+
+button {
+  border: 3px solid black !important;
+}
+
+.space-p {
+  padding-left: 150px !important;
+  padding-right: 150px !important;
+}
+
+button:hover {
+  background-color: black;
+}
