@@ -86,8 +86,19 @@
 
 // uste da se stavat vo ul lista vo html
 
-// Exercise II
+// Exercise II with constructor and methods
 
-// function Cube(area, perimeter) {}
+function Cube(area, perimeter) {
+  this.area = area;
+  this.perimeter = perimeter;
 
-// Exercise III
+  this.sum = function () {
+    let sumArea = 6 * a * a;
+    console.log(`The area of a cube is ${this.area}`);
+    console.log(`The perimeter of a cube is ${this.perimeter}`);
+  };
+}
+
+// Exercise III with classes
+
+// class .....
