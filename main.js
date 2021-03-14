@@ -1,6 +1,6 @@
 // Exercise I
 
-// let ul = document.querySelector("ul");
+// let ulList = document.querySelector("ul");
 
 // function Employee(name, company, job, salary) {
 //   this.name = name;
@@ -8,7 +8,7 @@
 //   this.job = job;
 //   this.salary = salary;
 
-//   this.ulList = function () {
+//   this.liElement = function () {
 //     return `<li>${this.name}: ${this.company}, ${this.job}, ${this.salary}eu.</li>`;
 //   };
 // }
@@ -22,9 +22,9 @@
 //   1000
 // );
 
-// ul.innerHTML += firstEmp.ulList();
-// ul.innerHTML += secondEmp.ulList();
-// ul.innerHTML += thirdEmp.ulList();
+// ulList.innerHTML += firstEmp.liElement();
+// ulList.innerHTML += secondEmp.liElement();
+// ulList.innerHTML += thirdEmp.liElement();
 
 // Exercise II
 
@@ -43,41 +43,39 @@
 // }
 
 // let newCube = new Cube(a);
-// console.log(`The area of a cube is ${newCube.sumArea()}`);
-// console.log(`The perimeter of a cube is ${newCube.sumPerimeter()}`);
+// console.log(`The area of the cube is ${newCube.sumArea()}`);
+// console.log(`The perimeter of the cube is ${newCube.sumPerimeter()}`);
 
 // Exercise III
 
-class Email {
-  constructor(from, to, subject, message) {
-    this.from = from;
-    this.to = to;
-    this.subject = subject;
-    this.message = message;
-  }
+// class Email {
+//   constructor(from, to, subject, message) {
+//     this.from = from;
+//     this.to = to;
+//     this.subject = subject;
+//     this.message = message;
+//   }
 
-  Connect() {
-    let input1 = document.getElementById("#formGroupInput1");
-    input1.value = this.from;
-    let input2 = document.getElementById("#formGroupInput2");
-    input2.value = this.to;
-    let input3 = document.getElementById("#formGroupInput3");
-    input3.value = this.subject;
-    let input4 = document.getElementById("#formGroupInput4");
-    input4.value = this.message;
-  }
+//   fullEmail() {
+//     alert(
+//       `The message is from: ${this.from} To: ${this.to} The subject is: ${this.subject} The message is: ${this.message}`
+//     );
+//   }
+// }
 
-  fullEmail() {
-    alert(
-      `The message is from: ${this.from} To: ${this.to} The subject is: ${this.subject} The message is: ${this.message}`
-    );
-  }
-}
+// let enterFrom = prompt(`This message is from: `);
+// let enterTo = prompt(`This message is to: `);
+// let enterSubject = prompt(`Enter the subject: `);
+// let enterMessage = prompt(`Write your message: `);
 
-let enterFrom = prompt(`This message is from: `);
-let enterTo = prompt(`This message is to: `);
-let enterSubject = prompt(`The subject is: `);
-let enterMessage = prompt(`Message: `);
-let check = new Email(enterFrom, enterTo, enterSubject, enterMessage);
-check.Connect();
-check.fullEmail();
+// let check = new Email(enterFrom, enterTo, enterSubject, enterMessage);
+// check.fullEmail();
+
+// let input1 = document.getElementById("formGroupInput1");
+// input1.value = enterFrom;
+// let input2 = document.getElementById("formGroupInput2");
+// input2.value = enterTo;
+// let input3 = document.getElementById("formGroupInput3");
+// input3.value = enterSubject;
+// let input4 = document.getElementById("formGroupInput4");
+// input4.value = enterMessage;
