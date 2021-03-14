@@ -1,104 +1,83 @@
 // Exercise I
 
-// I nacin
-// function Object() {
-//   this.name = "";
-//   this.setName = function (nameArg) {
-//     this.name = nameArg;
-//   };
+// let ul = document.querySelector("ul");
 
-//   this.company = "";
-//   this.setCompany = function (companyArg) {
-//     this.company = companyArg;
-//   };
-//   this.job = "";
-//   this.setJob = function (jobArg) {
-//     this.job = jobArg;
-//   };
-//   this.salary = "";
-//   this.setSalary = function (salaryArg) {
-//     this.salary = salaryArg;
-//   };
-// }
-
-// const Branko = new Object();
-// Branko.setName("Branko");
-// Branko.setCompany("Brainster");
-// Branko.setJob("Manager");
-// Branko.setSalary("500eu");
-// console.log(Branko);
-
-// let ulList = document.createElement("ul");
-// let liEl = document.createElement("li");
-// ulList.appendChild(liEl);
-
-// II nacin
-// function firstEmp(name, company, job, salary) {
+// function Employee(name, company, job, salary) {
 //   this.name = name;
 //   this.company = company;
 //   this.job = job;
 //   this.salary = salary;
 
-//   this.ulList1 = function () {
-//     console.log(
-//       `${this.name}: ${this.company}, ${this.job}, ${this.salary}eu.`
-//     );
+//   this.ulList = function () {
+//     return `<li>${this.name}: ${this.company}, ${this.job}, ${this.salary}eu.</li>`;
 //   };
 // }
 
-// const first = new firstEmp("Branko", "Brainster", "Manager", 500);
+// const firstEmp = new Employee("Branko", "Brainster", "Manager", 500);
+// const secondEmp = new Employee("Stanko", "EVN", "Owner", 570);
+// const thirdEmp = new Employee(
+//   "Darko",
+//   "Freelancer",
+//   "Front-end developer",
+//   1000
+// );
 
-// first.ulList1();
+// ul.innerHTML += firstEmp.ulList();
+// ul.innerHTML += secondEmp.ulList();
+// ul.innerHTML += thirdEmp.ulList();
 
-// function secondEmp(name, company, job, salary) {
-//   this.name = name;
-//   this.company = company;
-//   this.job = job;
-//   this.salary = salary;
+// Exercise II
 
-//   this.ulList2 = function () {
-//     console.log(
-//       `${this.name}: ${this.company}, ${this.job}, ${this.salary}eu.`
-//     );
+// let a = prompt("Please enter the size of the cube: ");
+
+// function Cube(size) {
+//   this.size = size;
+
+//   this.sumArea = function () {
+//     return 6 * this.size * this.size;
+//   };
+
+//   this.sumPerimeter = function () {
+//     return 12 * this.size;
 //   };
 // }
 
-// const second = new secondEmp("Stanko", "EVN", "Owner", 570);
+// let newCube = new Cube(a);
+// console.log(`The area of a cube is ${newCube.sumArea()}`);
+// console.log(`The perimeter of a cube is ${newCube.sumPerimeter()}`);
 
-// second.ulList2();
+// Exercise III
 
-// function thirdEmp(name, company, job, salary) {
-//   this.name = name;
-//   this.company = company;
-//   this.job = job;
-//   this.salary = salary;
+class Email {
+  constructor(from, to, subject, message) {
+    this.from = from;
+    this.to = to;
+    this.subject = subject;
+    this.message = message;
+  }
 
-//   this.ulList3 = function () {
-//     console.log(
-//       `${this.name}: ${this.company}, ${this.job}, ${this.salary}eu.`
-//     );
-//   };
-// }
+  Connect() {
+    let input1 = document.getElementById("#formGroupInput1");
+    input1.value = this.from;
+    let input2 = document.getElementById("#formGroupInput2");
+    input2.value = this.to;
+    let input3 = document.getElementById("#formGroupInput3");
+    input3.value = this.subject;
+    let input4 = document.getElementById("#formGroupInput4");
+    input4.value = this.message;
+  }
 
-// const third = new thirdEmp("Darko", "Freelancer", "Front-end developer", 1000);
-
-// third.ulList3();
-
-// uste da se stavat vo ul lista vo html
-
-// Exercise II with constructor and methods
-
-function Cube(area, perimeter) {
-  this.area = area;
-  this.perimeter = perimeter;
-
-  this.sum = function () {
-    let sumArea = 6 * a * a;
-    console.log(`The area of a cube is ${this.area}`);
-    console.log(`The perimeter of a cube is ${this.perimeter}`);
-  };
+  fullEmail() {
+    alert(
+      `The message is from: ${this.from} To: ${this.to} The subject is: ${this.subject} The message is: ${this.message}`
+    );
+  }
 }
 
-// Exercise III with classes
-
-// class .....
+let enterFrom = prompt(`This message is from: `);
+let enterTo = prompt(`This message is to: `);
+let enterSubject = prompt(`The subject is: `);
+let enterMessage = prompt(`Message: `);
+let check = new Email(enterFrom, enterTo, enterSubject, enterMessage);
+check.Connect();
+check.fullEmail();
