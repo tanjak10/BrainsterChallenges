@@ -26,7 +26,7 @@
     </div>
 
     <div class="container">
-      <div class="row">
+      <div class="row mt-3">
         <div class="col">
           <table class="table"></table>
         </div>
@@ -37,44 +37,50 @@
       <div class="row">
         <div class="col-4">
           <span class="h4">Add a book to the list:</span>
-          <form>
+          <form id="bookForm">
             <div class="form-group mb-0">
-              <label for="formGroupExampleInput"></label>
+              <label for="bookTitle"></label>
               <input
                 type="text"
                 class="form-control"
-                id="formGroupExampleInput"
+                id="bookTitle"
                 placeholder="Book title"
               />
             </div>
             <div class="form-group mb-0">
-              <label for="formGroupExampleInput2"></label>
+              <label for="bookAuthor"></label>
               <input
                 type="text"
                 class="form-control"
-                id="formGroupExampleInput2"
+                id="bookAuthor"
                 placeholder="Book author"
               />
             </div>
             <div class="form-group mb-0">
-              <label for="formGroupExampleInput2"></label>
+              <label for="bookMaxPages"></label>
               <input
                 type="text"
                 class="form-control"
-                id="formGroupExampleInput2"
-                placeholder="Current Page On..."
+                id="bookMaxPages"
+                placeholder="Current Page On"
               />
             </div>
             <div class="form-group">
-              <label for="formGroupExampleInput2"></label>
+              <label for="bookOnPage"></label>
               <input
                 type="text"
                 class="form-control"
-                id="formGroupExampleInput2"
+                id="bookOnPage"
                 placeholder="Book Max Pages"
               />
             </div>
-            <button type="submit" class="btn btn-success">Add to List</button>
+            <button
+              type="submit"
+              id="addBookButton"
+              class="btn btn-success mb-3"
+            >
+              Add to List
+            </button>
           </form>
         </div>
       </div>

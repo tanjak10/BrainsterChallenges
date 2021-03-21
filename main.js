@@ -1,4 +1,4 @@
-let arr = [
+let bookArr = [
   { title: "The Hobbit", author: "J.R.R. Tolkien", maxPages: 200, onPage: 60 },
   { title: "Harry Potter", author: "J.K. Rowling", maxPages: 250, onPage: 150 },
   {
@@ -41,7 +41,7 @@ function Books(title, author, onPage, maxPages) {
   }
 }
 
-arr.forEach((book) => {
+bookArr.forEach((book) => {
   const instance = new Books(
     book.title,
     book.author,
@@ -75,7 +75,7 @@ let myTh5 = document.createElement("th");
 myTh5.innerText = "Progress";
 tableRow.appendChild(myTh5);
 
-arr.forEach((book) => {
+bookArr.forEach((book) => {
   let tableRow = myTable.insertRow(-1);
 
   let myTh1 = document.createElement("td");
@@ -100,13 +100,14 @@ arr.forEach((book) => {
   let progressBarBackground = document.createElement("div");
   let progress = Math.floor((book.onPage / book.maxPages) * 100);
 
-  progressBarBackground.style.backgroundColor = "grey";
+  progressBarBackground.style.backgroundColor = "lightgrey";
   progressBarBackground.style.width = "100%";
   progressBarBackground.style.height = "30px";
   progressBar.style.width = `${progress}%`;
   progressBar.style.height = "30px";
-  progressBar.style.textAlign = "center";
-  progressBarBackground.style.verticalAlign = "center";
+  progressBar.style.display = "flex";
+  progressBar.style.alignItems = "center";
+  progressBar.style.justifyContent = "center";
   progressBar.style.backgroundColor = "green";
   progressText.style.color = "white";
   progressText.style.margin = "0";
@@ -118,3 +119,33 @@ arr.forEach((book) => {
   myTd5.appendChild(progressBarBackground);
   tableRow.appendChild(myTd5);
 });
+
+const bookForm = document.getElementById("bookForm");
+const bookTitle = document.getElementById("bookTitle");
+const bookAuthor = document.getElementById("bookAuthor");
+const bookMaxPages = document.getElementById("bookMaxPages");
+const bookOnPage = document.getElementById("bookOnPage");
+const addBookButton = document.getElementById("addBookButton");
+
+function addNewBook(e) {
+  e.preventDefault();
+
+  let newBookArr = {
+    title: bookTitle.value,
+    author: bookAuthor.value,
+    maxPages: bookMaxPages.value,
+    onPage: bookOnPage.value,
+  };
+  let progress = Math.floor((newBookArr.onPage / newBookArr.maxPages) * 100);
+
+  myTable.innerHTML += ` <tr>
+<td>${newBookArr.title}</td>
+<td>${newBookArr.author}</td>
+<td>${newBookArr.maxPages}</td>
+<td>${newBookArr.onPage}</td>
+</tr>`;
+
+  bookForm.reset();
+}
+
+addBookButton.addEventListener("click", addNewBook);
