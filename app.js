@@ -1,6 +1,5 @@
 $(function () {
   //write your code here
-
   let race = $(".btn1");
   let startOver = $(".btn2");
   let firstCar = $(".gif1");
@@ -12,7 +11,6 @@ $(function () {
   let hiddenTwo = $(".two");
   let hiddenThree = $(".three");
   let hiddenImg = $(".hidden-img");
-  let table = $("table");
   let bodyRace = $("#race");
 
   race.on("click", function () {
@@ -27,7 +25,7 @@ $(function () {
                 race.attr("disabled", true);
                 var carOneTime = Math.floor(Math.random() * 7000);
                 var carTwoTime = Math.floor(Math.random() * 7000);
-                table.append(`<tr>
+                $(".table1").find("table").append(`<tr>
             <td class = 'firstData'></td>
             <td class = 'secondData'></td>
           </tr>`);
@@ -48,30 +46,40 @@ $(function () {
                 localStorage.setItem("carTwoTime", carTwoTime);
                 localStorage.setItem("firstPlace", place1);
                 localStorage.setItem("secondPlace", place2);
-                firstCar.animate({
-                  duration: carOneTime,
-                  complete: function () {
-                    table
-                      .find(".firstData")
-                      .append(
-                        `Finished in: ${place1} place with a time of: ${carOneTime} miliseconds!`
-                      );
-                    first = true;
-                    completed();
-                  },
-                });
-                secondCar.animate({
-                  duration: carOneTime,
-                  complete: function () {
-                    table
-                      .find(".firstData")
-                      .append(
-                        `Finished in: ${place2} place with a time of: ${carTwoTime} miliseconds!`
-                      );
-                    second = true;
-                    completed();
-                  },
-                });
+                firstCar.animate(
+                  { marginLeft: "83%" },
+                  {
+                    duration: carOneTime,
+                    complete: function () {
+                      $(".table1")
+                        .find("table")
+                        .find("tr")
+                        .find(".firstData")
+                        .append(
+                          `Finished in: <span class="font-weight-bold text-white"> ${place1} </span> place with a time of: <span class="font-weight-bold text-white"> ${carOneTime} </span> miliseconds!`
+                        );
+                      first = true;
+                      completed();
+                    },
+                  }
+                );
+                secondCar.animate(
+                  { marginLeft: "83%" },
+                  {
+                    duration: carTwoTime,
+                    complete: function () {
+                      $(".table1")
+                        .find("table")
+                        .find("tr")
+                        .find(".secondData")
+                        .append(
+                          `Finished in: <span class="font-weight-bold text-danger"> ${place2} </span> place with a time of: <span class="font-weight-bold text-danger"> ${carTwoTime} </span> miliseconds!`
+                        );
+                      second = true;
+                      completed();
+                    },
+                  }
+                );
               });
             });
           });
@@ -91,7 +99,7 @@ $(function () {
   }
   secondTable.find("table").append(`<tr class="table-row">
   <td class="first-car-value text-white d-block"></td>
-  <td class="second-car-value  text-white d-block"></td>
+  <td class="second-car-value text-white d-block"></td>
   </tr>`);
 
   $(document)
@@ -106,6 +114,10 @@ $(function () {
     .append(
       `<span class='text-danger font-weight-bold'>Car2</span> finished in <span class="text-danger font-weight-bold"> ${position2}</span> place with a time of <span class="text-danger font-weight-bold"> ${item2}</span> miliseconds!`
     );
+  $(document).find(".table-row").css({
+    display: "flex",
+    flexDirection: "column",
+  });
 
   localStorage.removeItem("carOneTime");
   localStorage.removeItem("carTwoTime");
@@ -113,14 +125,14 @@ $(function () {
   localStorage.removeItem("secondPlace");
 
   function completed() {
-    if (first === true || second === true) {
+    if (first == true || second == true) {
       finish.css({ display: "block" });
+      bodyRace.css({ backgroundColor: "rgba(0,0,0,6)" });
     }
-    bodyRace.css({ backgroundColor: "rgba(0,0,0,6)" });
   }
 
   startOver.on("click", function () {
-    if (first === true && second === true) {
+    if (first == true && second == true) {
       race.attr("disabled", false);
       secondCar.animate({ marginLeft: "0" }, 0, function () {
         finish.css({ display: "none" });
@@ -128,7 +140,7 @@ $(function () {
       firstCar.animate({ marginLeft: "0" }, 0, function () {});
       first = false;
       second = false;
-      bodyRace.css({ backgroundColor: "#24202" });
+      bodyRace.css({ backgroundColor: "#000000" });
     }
   });
 });
