@@ -2,6 +2,48 @@ body {
   background-color: #e7e7e7;
 }
 
+.logo {
+  width: 80px;
+}
+
+/* p {
+  margin-bottom: 0 !important;
+} */
+
+li > a {
+  color: #000000 !important;
+}
+
+.nav-link:hover {
+  color: #ffa500 !important;
+  background-color: #e7e7e7;
+}
+
+.fas:hover {
+  color: #ffa500 !important;
+  cursor: pointer;
+}
+
+.social {
+  color: #ffffff;
+  background-color: #ffa500 !important;
+}
+
+.social:hover {
+  background-color: grey !important;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.d-block {
+  color: #000000 !important;
+}
+
+.d-block:hover {
+  text-decoration: none;
+  color: #ffa500 !important;
+}
+
 /*use color:orange for the orange color*/
 /*use background-color: #d3d3d3; color: #5c5c5c; for the badges*/
 /*use color:grey for the social-share icons on hover*/

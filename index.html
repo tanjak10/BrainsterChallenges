@@ -11,7 +11,7 @@
     <!-- Latest compiled and minified BOOTSTRAP CSS -->
     <link
       rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     />
 
     <!-- Local CSS -->
@@ -27,6 +27,140 @@
   </head>
   <body>
     <!-- start here -->
+    <div class="container bg-white">
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse my-3" id="navbarSupportedContent">
+          <img src="./img/logo.png" alt="" class="logo" />
+
+          <ul class="navbar-nav mx-auto font-weight-bold text-uppercase">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Bikes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Gear</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Parts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tire</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Service-info</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Catalogues</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+          <i class="fas fa-search mr-2"></i>
+          <i class="fas fa-shopping-bag"></i>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container bg-white">
+      <div class="row border-top border-bottom">
+        <div class="col my-3">
+          <h1>Bikes</h1>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <div class="row my-3">
+            <div class="col">
+              <h2 class="font-weight-bold">Filter by:</h2>
+              <a href="#" class="d-block show-all">Show all</a>
+            </div>
+          </div>
+          <div class="row my-3 border-top">
+            <div class="col">
+              <h4 class="font-weight-bold">Gender</h4>
+              <a href="#" class="d-block male">Male</a>
+              <a href="#" class="d-block female">Female</a>
+            </div>
+          </div>
+          <div class="row my-3">
+            <div class="col">
+              <h4 class="font-weight-bold border-top">Brand</h4>
+              <div class="text-uppercase">
+                <a href="#" class="d-block">Le grand bikes</a>
+                <a href="#" class="d-block">Kross</a>
+                <a href="#" class="d-block">Explorer</a>
+                <a href="#" class="d-block">Visitor</a>
+                <a href="#" class="d-block">Pony</a>
+                <a href="#" class="d-block">Force</a>
+                <a href="#" class="d-block">E-bikes</a>
+                <a href="#" class="d-block">Ideal</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-9">
+          <div class="row all-bikes"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="row bg-light">
+            <div class="col-3 border-right my-5">
+              <h4 class="mb-3">Social share</h4>
+              <i class="fab fa-facebook-f p-3 bg-white social mr-2"></i>
+              <i class="fab fa-instagram p-3 bg-white social mr-2"></i>
+              <i class="fab fa-twitter p-3 bg-white social mr-2"></i>
+              <i class="fab fa-linkedin-in p-3 bg-white social"></i>
+            </div>
+            <div class="col-3 border-right my-5">
+              <h4 class="mb-3">Event info</h4>
+              <a href="#" class="d-block">Enter now</a>
+              <a href="#" class="d-block">Event info</a>
+              <a href="#" class="d-block">Course maps</a>
+              <a href="#" class="d-block">Race pack</a>
+              <a href="#" class="d-block">Results</a>
+              <a href="#" class="d-block">FAQs</a>
+              <a href="#" class="d-block">Am I Registered?</a>
+            </div>
+            <div class="col-3 border-right my-5">
+              <h4 class="mb-3">Registration</h4>
+              <a href="#" class="d-block">Volunteers</a>
+              <a href="#" class="d-block">Gallery</a>
+              <a href="#" class="d-block">Press</a>
+              <a href="#" class="d-block">Results</a>
+              <a href="#" class="d-block">Privacy Policy</a>
+              <a href="#" class="d-block">Service Plus</a>
+              <a href="#" class="d-block">Contacts</a>
+            </div>
+            <div class="col-3 my-5">
+              <h4 class="mb-3">Schedule</h4>
+              <a href="#" class="d-block">Gallery</a>
+              <a href="#" class="d-block">About</a>
+              <a href="#" class="d-block">Videos</a>
+              <a href="#" class="d-block">Results</a>
+              <a href="#" class="d-block">FAQs</a>
+              <a href="#" class="d-block">Results</a>
+              <a href="#" class="d-block">Volunteers </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- jQuery library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
