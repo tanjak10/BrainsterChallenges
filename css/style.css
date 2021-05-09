@@ -6,10 +6,6 @@ body {
   width: 80px;
 }
 
-/* p {
-  margin-bottom: 0 !important;
-} */
-
 li > a {
   color: #000000 !important;
 }
@@ -42,6 +38,20 @@ li > a {
 .d-block:hover {
   text-decoration: none;
   color: #ffa500 !important;
+}
+
+.card:hover {
+  border-color: #ffa500 !important;
+  transition: all 1s ease-out;
+}
+
+.badge {
+  background-color: #d3d3d3;
+  color: #5c5c5c;
+}
+
+.badge:hover {
+  background-color: #ffa500 !important;
 }
 
 /*use color:orange for the orange color*/
